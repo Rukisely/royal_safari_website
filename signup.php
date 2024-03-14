@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Royal Safari</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+    
+    body{
+            background-color: rgba(0, 0, 0, 0.89);
+            color:#dfdfe2;
+        }
+        .navbar-inverse {
+            background-color: rgba(8, 150, 194, 0.651);
+            border-color: rgba(8, 150, 194, 0.651);
+            width: 100%;
+            height: 80px;
+            left: 0;
+  top: 0;
+  z-index: 300;
+  box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+
+        }
+        .navbar-inverse .navbar-nav>.active>a,
+        .navbar-inverse .navbar-nav>.active>a:focus,
+        .navbar-inverse .navbar-nav>.active>a:hover {
+            color: #dfdfe2;
+            background-color: #ffffff;
+        }
+
+        .navbar-inverse .navbar-nav>li>a {
+            color: #dfdfe2;
+            font-size: 20px;
+  line-height: 80px;
+  letter-spacing: 0.5px;
+  
+        }
+
+        .navbar-inverse .navbar-nav>li>a:focus,
+        .navbar-inverse .navbar-nav>li>a:hover {
+            
+            background-color: transparent;
+            color: #1b1b32;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+               
+                <!-- <a class="navbar-brand" href="#">GSY Services</a> -->
+            </div>
+            
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html" style="margin-top: 30px;font-size: 20px;">Home</a></li>
+                <li><a href="services.html" style="margin-top: 30px;font-size: 20px">Services</a></li>
+
+                <li><a href="indx.html" style="margin-top: 30px;font-size: 20px">Gallery</a></li>
+                <li><a href="contactus.html" style="margin-top: 30px;font-size: 20px">Contact us</a></li>
+
+                <li><a href="signup.html" style="margin-top: 27px;font-size: 20px;color: #dfdfe2"><span class="glyphicon glyphicon-user"></span>
+                        Sign Up</a></li>
+                <li><a href="signin.html" style="margin-top: 27px;margin-right: 100px;font-size: 20px"><span
+                            class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-2" ></div>
+
+            <div class="col-md-8" style="text-align: center;">
+
+                <h2>Sign Up</h2>
+                <p style="margin-top: 20px;">Please fill the form below to create an Account</p>
+               <form method="GET" action="demo.php">
+                    <div class="form-group row">
+
+                        <div class="col-xs-6">
+                           
+                            <input class="form-control" id="fname" name="fname" type="text" placeholder="First Name" required>
+                        </div>
+                       
+                        <div class="col-xs-6">
+                           
+                            <input class="form-control" id="lname" name="lname"  type="text" placeholder="Last Name" required>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="form-group row">
+
+                        <div class="col-xs-6">
+                           
+                             <input type="tel" class="form-control" id="phone" name="phone" placeholder="514-963-9812" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        title="Must match Pattern"
+                        required>
+                        </div>
+                       
+                        <div class="col-xs-6">
+                           
+                            <input class="form-control" id="email" name="email"  type="email" placeholder="Email" required>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="form-group row">
+
+                        <div class="col-xs-6">
+                           
+                            <input class="form-control" id="pass" name="pass" type="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                        title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                        </div>
+                       
+                        <div class="col-xs-6">
+                           
+                            <input class="form-control" id="ex3" type="password" placeholder="Confirm Password" required>
+                        </div>
+
+                        
+                    </div>
+                    
+                     <button class="btn btn-info">Sign Up</button>
+                </form>
+
+                <p style="text-align: left;margin-top: 30px;">
+                <input type="checkbox" /> I accept the terms of Use & Privacy Policy
+
+                <br/>
+                <br/>
+              
+
+               
+            </p>
+
+            <p style="text-align: center;margin-top: 30px;">
+                Already have an account? <span style="color: #0c4ad4;"><a href="signin.html">Login here</a></span>
+                    </p>
+           
+            </div>
+
+
+            <div class="col-md-2" ></div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                    <hr/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+
+            </div>
+            
+            <div class="col-md-4">
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+
+            </div>
+
+            <div class="col-md-4" style="text-align: center;">
+                    <ul style="list-style: none;float: left;">
+                        <li style="list-style: none;float: left;padding: 10px;"><a href="#" style="margin-top: 30px;font-size: 20px;">Terms</a></li>
+                        <li style="list-style: none;float: left;padding: 10px;"><a href="#" style="margin-top: 30px;font-size: 20px;">Privacy</a></li>
+                        <li style="list-style: none;float: left;padding: 10px;"><a href="#" style="margin-top: 30px;font-size: 20px;">Security</a></li>
+              
+                    </ul>
+            </div>
+
+            <div class="col-md-4">
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

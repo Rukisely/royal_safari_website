@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bureau de Change</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            /* Updated styles for header */
+            background-color: #008080;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: relative; /* To make footer position correctly */
+        }
+
+        .header-image {
+            /* Updated styles for header image */
+            max-width: 50%; /* Adjust the size as per your preference */
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .services {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .services p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .dropdown {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .dropdown select {
+            font-size: 16px;
+            padding: 5px;
+        }
+
+        footer {
+            background-color: #079b9b;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bureau de Change</h1>
+        <div class="breadcrumbs">
+            <a href="services.html">Back to Our Service Page</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <img class="header-image" src="images/4.webp" alt="Bureau de Change Image">
+
+        <div class="services">
+            <p>Royal Safari offers money exchange services, thus the customers need not to worry about changing their currencies.</p>
+        </div>
+        <div class="dropdown">
+            <label for="currency-select">Select Currency:</label>
+            <select id="currency-select">
+                <option value="usd">Tanzanian Shilling (TSh)</option>
+                <option value="naira">Nigerian Naira (NGN)</option>
+                <option value="rupee">Indian Rupee (INR)</option>
+                <option value="euro">Euro (EUR)</option>
+                <!-- Add more currency options here -->
+            </select>
+            <p id="conversion-rate">1 USD = 2300 TSh</p>
+        </div>
+    </div>
+
+    <div class="google-maps-links">
+        <p>Find Foreign Exchange Places:</p>
+        <ul>
+            <li><a href="https://maps.google.com/?q=Foreign+Exchange+Places+in+Tanzania">Tanzania</a></li>
+            <li><a href="https://maps.google.com/?q=Foreign+Exchange+Places+in+Nigeria">Nigeria</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const conversionRates = {
+            tsh: 2300, // Replace with actual conversion rate for Tanzanian Shilling
+            naira: 400, // Replace with actual conversion rate for Nigerian Naira
+            rupee: 30, // Replace with actual conversion rate for Indian Rupee
+            euro: 2733, // Replace with actual conversion rate for Euro
+            // Add more currencies here
+
+        };
+
+        const currencySelect = document.getElementById("currency-select");
+        const conversionRateText = document.getElementById("conversion-rate");
+
+        currencySelect.addEventListener("change", () => {
+            const selectedCurrency = currencySelect.value;
+            const rate = conversionRates[selectedCurrency];
+            conversionRateText.textContent = `1 ${selectedCurrency.toUpperCase()} = ${rate} TSh`;
+        });
+    </script>
+
+<footer>
+    <p>&copy; 2023 @Royal Safari. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+
+
+        
